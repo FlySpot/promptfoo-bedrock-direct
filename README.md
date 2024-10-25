@@ -1,8 +1,16 @@
 # promptfoo-bedrock-direct
 promptfoo tests for LLM on bedrock
 
-To get started, set your OPENAI_API_KEY environment variable, or other required keys for the providers you selected.
-
+First of all you need to have installed python and configured virtual environment for it.
+```
+python3 -m venv .venv
+ource .venv/bin/activate
+```
+To get started, set your AWS environment variables:
+```
+export AWS_ACCESS_KEY_ID="<Copy from AWS access portal Access keys>"
+export AWS_SECRET_ACCESS_KEY="<Copy from AWS access portal Access keys>"
+```
 Next, edit promptfooconfig.yaml.
 
 Then run:
@@ -10,6 +18,6 @@ Then run:
 promptfoo eval
 ```
 
-Afterwards, you can view the results by running `promptfoo view`
+Afterward, you can view the results by running `promptfoo view`
 
 
