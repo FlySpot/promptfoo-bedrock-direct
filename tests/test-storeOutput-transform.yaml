@@ -1,0 +1,10 @@
+- vars:
+    message: "What's your favorite fruit? You must pick one. Output the name of a fruit only"
+  options:
+    storeOutputAs: favoriteFruit
+- vars:
+    message: 'Why do you like {{favoriteFruit}} so much?'
+  options:
+    storeOutputAs: reason
+- vars:
+    message: 'Write a snarky 2 sentence rebuttal to this argument for loving {{favoriteFruit}}: \"{{reason}}\"'

@@ -1,0 +1,30 @@
+  - vars:
+      topic: bananas
+    assert:
+      - type: icontains
+        value: bananas
+  - vars:
+      topic: avocado toast
+    assert:
+      - type: icontains
+        value: toast
+#  - vars:
+#      language: French
+#      input: Hello world
+#    assert:
+#      - type: icontains
+#        value: Bonjour
+#  - vars:
+#      language: Spanish
+#      input: Where is the library?
+#    assert:
+#      - type: icontains
+#        value: biblioteca
+
+
+#  assert:
+#    - type: contains-all
+#      value:
+#        - 'Value 1'
+#        - 'Value 2'
+#        - 'Value 3'
